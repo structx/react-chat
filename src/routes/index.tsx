@@ -10,6 +10,8 @@ import { Profile } from '../features/users/Profile'
 import { CreateConversation } from '../features/conversations/CreateConversation'
 import { Conversation } from '../features/conversations/Conversation'
 
+import { Dashboard } from '../components/dashboard/Dashboard'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: '/conversation/:uid',
     element: <Conversation />
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />
   }
 ])
 
